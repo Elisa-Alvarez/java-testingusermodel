@@ -42,7 +42,7 @@ public class UserModelApplication
         if (!stop)
         {
             ApplicationContext ctx = SpringApplication.run(com.lambdaschool.usermodel.UserModelApplication.class,
-                                                           args);
+                    args);
 
             DispatcherServlet dispatcherServlet = (DispatcherServlet) ctx.getBean("dispatcherServlet");
             dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
